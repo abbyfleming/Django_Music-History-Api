@@ -4,6 +4,14 @@ from .album_model import Album
 
 
 class Song(models.Model):
+	"""
+	Purpose: Class to create a table representing a song
+	Variables: 
+		artist - FK to Artist
+		album - FK to Album
+		title - string, title of album
+		length - timefield, length of song
+	"""
 
 	artist = models.ForeignKey(
 	Artist, 

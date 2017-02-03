@@ -1,14 +1,23 @@
 from django.db import models
 
 class Artist(models.Model):
-    artist_name = models.CharField(max_length=70)
-    first_name = models.CharField(max_length=35)
-    last_name = models.CharField(max_length=35)
-    year_established = models.IntegerField(max_length=4, null='True')
-    
+	"""
+	Purpose: Class to create a table representing an artist
+	Variables: 
+		artist_name - string, name of artist (stagename)
+		first_name - string, first name of artist
+		last_name - string, last name of artist
+		year established - interger, year established - max four YYYY
+	"""
 
-    def __str__(self):
-    	return "{}".format(self.artist_name)
+	artist_name = models.CharField(max_length=70, help_text="Stage Name")
+	first_name = models.CharField(max_length=35)
+	last_name = models.CharField(max_length=35)
+	year_established = models.IntegerField(max_length=4, null='True', help_text="YYYY")
+	
 
-    class Meta:
-        ordering = ('artist_name',)
+	def __str__(self):
+		return "{}".format(self.artist_name)
+
+	class Meta:
+		ordering = ('artist_name',)
