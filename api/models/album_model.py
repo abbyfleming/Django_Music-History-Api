@@ -7,7 +7,7 @@ class Album(models.Model):
 	Variables: 
 		artist - FK to Artist
 		title - string, title of album
-		length - timefield, length of album
+		length - integer, length of album in ms
 		record_label - string, record label 
 	"""
 	
@@ -19,7 +19,7 @@ class Album(models.Model):
 
 	title = models.CharField(max_length=70)
 	release_year = models.IntegerField(max_length=4, help_text="YYYY")
-	length = models.TimeField(blank=True)
+	length = models.IntegerField(help_text="milliseconds", null='True', blank='True')
 	record_label = models.CharField(max_length=35)
 
 	def __str__(self):

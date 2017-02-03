@@ -10,9 +10,7 @@ class Artist(models.Model):
 		year established - interger, year established - max four YYYY
 	"""
 
-	artist_name = models.CharField(max_length=70, help_text="Stage Name")
-	first_name = models.CharField(max_length=35)
-	last_name = models.CharField(max_length=35)
+	artist_name = models.CharField(max_length=70)
 	year_established = models.IntegerField(max_length=4, null='True', help_text="YYYY")
 	
 
