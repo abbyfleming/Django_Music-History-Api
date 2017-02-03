@@ -10,13 +10,13 @@ class Song(models.Model):
 		artist - FK to Artist
 		album - FK to Album
 		title - string, title of album
-		length - timefield, length of song
+		length - interger, milliseconds length of song
 	"""
 
 	artist = models.ForeignKey(
-	Artist, 
-	on_delete=models.CASCADE,
-	related_name='songs'
+		Artist, 
+		on_delete=models.CASCADE,
+		related_name='songs'
 	)
 
 	album = models.ForeignKey(
@@ -26,7 +26,7 @@ class Song(models.Model):
 	)
 
 	title = models.CharField(max_length=70)
-	length = models.TimeField(null='True')
+	length = models.IntegerField(help_text="milliseconds", null='True', blank='True')
 
 	def __str__(self):
 		return "{}".format(self.title)

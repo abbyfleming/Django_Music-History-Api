@@ -8,7 +8,7 @@ class ArtistSerializer(serializers.HyperlinkedModelSerializer):
 
 	class Meta:
 		model = artist_model.Artist
-		fields = ('artist_name', 'first_name', 'last_name', 'year_established')
+		fields = ('artist_name', 'year_established')
 
 		#depth 1 allows you to see everything on a foreign key
 		#depth 2 will look inside foreign keys on foreign key

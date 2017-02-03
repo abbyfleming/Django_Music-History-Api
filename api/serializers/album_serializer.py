@@ -7,7 +7,7 @@ class AlbumSerializer(serializers.HyperlinkedModelSerializer):
 	"""
 	class Meta:
 		model = album_model.Album
-		fields = ('artist','release_year', 'length', 'record_label')
+		fields = ('artist', 'title', 'release_year', 'length', 'record_label')
 		depth = 1 #depth 1 allows you to see everything on a foreign key
 
 		#depth allows you to see everything on a foreign key
