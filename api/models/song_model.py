@@ -21,6 +21,8 @@ class Song(models.Model):
 	album = models.ForeignKey(
 		Album,
 		on_delete=models.CASCADE,
+		blank='True',
+		null='True'
 		# related_name='songs'
 	)
 
