@@ -1,6 +1,4 @@
-#Bangazon API
-Constructing an API for Bangazon's client developers to access for their application development.
-
+#Muisc History API
 
 ###Initial Setup
 * Install [Python 3.6](http://https://www.python.org/downloads/release/python-360/)
@@ -14,7 +12,7 @@ Using your terminal:
 * ```pip install django```
 * ```pip install djangorestframework``` 
 
-After installing django, djangorestframework, and pygments, clone the repo locally to your computer.
+After installing django and djangorestframework, clone the repo locally to your computer.
 
 
 ###Sync the Database
