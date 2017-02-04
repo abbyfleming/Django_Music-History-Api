@@ -6,7 +6,7 @@ class Genre(models.Model):
 	Variables: 
 		name - string, name of genre
 	"""
-	genre_name = models.CharField(max_length=35)
+	genre_name = models.CharField(max_length=35, default='')
 
 	def __str__(self):
 		return "{}".format(self.genre_name)

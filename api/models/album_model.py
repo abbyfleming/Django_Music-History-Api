@@ -1,5 +1,6 @@
 from django.db import models
 from .artist_model import Artist
+from .genre_model import Genre
 
 class Album(models.Model):
 	"""
@@ -16,6 +17,12 @@ class Album(models.Model):
 		on_delete=models.CASCADE,
 		related_name='albums'
 	)
+
+	genre = models.ForeignKey(
+		Genre,
+		on_delete=models.CASCADE,
+		related_name='albums'
+		)
 
 	title = models.CharField(max_length=70)
 	release_year = models.IntegerField(max_length=4, help_text="YYYY")
