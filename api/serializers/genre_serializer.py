@@ -7,5 +7,5 @@ class GenreSerializer(serializers.HyperlinkedModelSerializer):
 	"""
 	class Meta:
 		model = genre_model.Genre
-		fields = ('genre_name',)
+		fields = ('genre_name', 'url')
 		#if it's one, then add a trailing comma
