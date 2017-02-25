@@ -1,0 +1,134 @@
+[
+  {
+    "fields": {
+      "artist_name": "Vancouver Sleep Clinic",
+      "year_established": 2013
+    },
+    "model": "api.artist",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "artist_name": "AURORA",
+      "year_established": 2015
+    },
+    "model": "api.artist",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "artist_name": "Tall Heights",
+      "year_established": 2009
+    },
+    "model": "api.artist",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "genre_name": "Indie"
+    },
+    "model": "api.genre",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "genre_name": "Singer-songwriter"
+    },
+    "model": "api.genre",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "genre_name": "Folk"
+    },
+    "model": "api.genre",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "record_label_name": "Sony Masterworks"
+    },
+    "model": "api.recordlabel",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "record_label_name": "Glassnote Entertainment Group"
+    },
+    "model": "api.recordlabel",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "record_label_name": "Sony Music Entertainment"
+    },
+    "model": "api.recordlabel",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "artist": 1,
+      "genre": 1,
+      "length": 2459970,
+      "record_label_name": 1,
+      "release_year": 2014,
+      "title": "Winter"
+    },
+    "model": "api.album",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "artist": 2,
+      "genre": 2,
+      "length": 3840000,
+      "record_label_name": 2,
+      "release_year": 2016,
+      "title": "All My Demons Greeting Me As A Friend"
+    },
+    "model": "api.album",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "artist": 3,
+      "genre": 3,
+      "length": 2459986,
+      "record_label_name": 3,
+      "release_year": 2016,
+      "title": "Neptune"
+    },
+    "model": "api.album",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "album": 1,
+      "artist": 1,
+      "length": 199000,
+      "title": "Flaws"
+    },
+    "model": "api.song",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "album": 2,
+      "artist": 2,
+      "length": 249000,
+      "title": "Runaway"
+    },
+    "model": "api.song",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "album": 3,
+      "artist": 3,
+      "length": 221984,
+      "title": "Spirit Cold"
+    },
+    "model": "api.song",
+    "pk": 3
+  }
+]
