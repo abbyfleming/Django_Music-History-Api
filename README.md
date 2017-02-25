@@ -21,6 +21,13 @@ In the main project directory, run:
 
 ```python manage.py migrate```
 
+
+###Start with Sample Data
+
+In the main project directory, run:
+```python manage.py loaddata musichistory_initial_data.json```
+
+
 ###Run the Server
 
 ```python manage.py runserver```
