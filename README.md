@@ -1,11 +1,11 @@
-#Muisc History API
+# Muisc History API
 
-###Initial Setup
+### Initial Setup
 * Install [Python 3.6](http://https://www.python.org/downloads/release/python-360/)
 * Install [Pip](https://pip.pypa.io/en/stable/installing/)
 
 
-###Getting Started
+### Getting Started
 
 Using your terminal:
 
@@ -15,20 +15,20 @@ Using your terminal:
 After installing django and djangorestframework, clone the repo locally to your computer.
 
 
-###Sync the Database
+### Sync the Database
 
 In the main project directory, run:
 
 ```python manage.py migrate```
 
 
-###Start with Sample Data
+### Start with Sample Data
 
 In the main project directory, run:
 ```python manage.py loaddata musichistory_initial_data.json```
 
 
-###Run the Server
+### Run the Server
 
 ```python manage.py runserver```
 
